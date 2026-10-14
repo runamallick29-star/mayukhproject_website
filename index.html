@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayukh Coaching Institute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mayukh Coaching Institute</h1>
+    <p>Guiding Students Towards Success</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>Welcome to Mayukh Coaching Institute, founded by <strong>Mr. Mayukh Mallick</strong>. We are dedicated to providing quality education and personalized guidance to help students achieve their academic and career goals.</p>
+    </section>
+
+    <section id="courses" class="card">
+      <h2>Our Courses</h2>
+      <ul>
+        <li>Foundation Courses for Class 8–10</li>
+        <li>NEET Preparation Modules</li>
+        <li>Board Exam Coaching</li>
+        <li>Special Doubt Clearing Sessions</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Teacher:</strong> Mr. Mayukh Mallick</p>
+        <p><strong>Phone:</strong> <a href="tel:7583909055">7583909055</a></p>
+        <p><strong>Email:</strong> <a href="mailto:runamallick29@gmail.com">runamallick29@gmail.com</a></p>
+      </div>
+      <button onclick="showMessage()">Send Message</button>
+      <p id="msg"></p>
+    </section>
+
+    <section id="register" class="card">
+      <h2>Student Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course" required>
+          <option value="">--Choose a Course--</option>
+          <option value="foundation">Foundation (Class 8–10)</option>
+          <option value="neet">NEET Preparation</option>
+          <option value="board">Board Exam Coaching</option>
+          <option value="doubt">Doubt Clearing Sessions</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Mayukh Coaching Institute. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
